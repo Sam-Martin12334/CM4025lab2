@@ -1,5 +1,5 @@
 var http = require("http");
-var fs = require('fs');
+fs = require('fs');
 const PORT = process.env.PORT || 8080;
 
 
