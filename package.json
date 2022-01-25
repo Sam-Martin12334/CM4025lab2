@@ -8,14 +8,16 @@
     "start": "node index.js"
   },
   "repository": {
-	  "type": "git",
-	  "url": "git+https://github.com/Sam-Martin12334/CM4025lab2"
+    "type": "git",
+    "url": "git+https://github.com/Sam-Martin12334/CM4025lab2"
   },
   "author": "Sam",
   "license": "ISC",
   "bugs": {
-	  "url": "https://github.com/Sam-Martin12334/CM4025lab2"
+    "url": "https://github.com/Sam-Martin12334/CM4025lab2"
   },
-  "homepage": "https://github.com/Sam-Martin12334/CM4025lab2"
-  
+  "homepage": "https://github.com/Sam-Martin12334/CM4025lab2",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
