@@ -1,5 +1,5 @@
 var http = require("http");
-fs = require('fs');
+var fs = require('fs');
 const PORT = process.env.PORT || 8080;
 
 
@@ -11,7 +11,7 @@ http.createServer(function (request, response) {
     });
     var readStream = fs.createReadStream(__dirname + '/index.html');
     readStream.pipe(response)
-}).listen(PORT)
+}).listen(PORT);
 
 
 
