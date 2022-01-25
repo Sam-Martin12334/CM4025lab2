@@ -1,12 +1,16 @@
 var http = require("http");
-const PORT = process.env.PORT || 3000;
+fs = require('fs');
+const PORT = process.env.PORT || 8080;
 
 
 
 http.createServer(function (request, response) {
-    response.writeHead(200, {'Content-Type': 'text/plain'})
-
-    response.end('Hello World\n');
+    response.writeHead(200, {
+        'Content-Type': 'text/plain',
+        'Access-Control-Allow-origin' : '*'
+    });
+    var readStream = fs.createReadStream(__dirname + '/index.html');
+    readStream.pipe(response)
 }).listen(PORT)
 
 
